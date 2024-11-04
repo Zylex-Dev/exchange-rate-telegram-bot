@@ -4,6 +4,8 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import logging
+
+from mongoDB_database import get_all_users, add_new_user
 from parser import get_cny_exchange_rate  # Импортируем ваш парсер
 
 # Настройка логирования
@@ -15,16 +17,14 @@ logger = logging.getLogger(__name__)
 
 # Константа для предела курса
 LOWER_THRESHOLD = 15.00
-user_chat_id = (
-    None  # Переменная для хранения chat_id пользователя, отправившего команду /start
-)
 
 
 # Функция для обработки команды /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    global user_chat_id
-    user_chat_id = update.message.chat_id  # сохраняем чат айди пользователя
-    print(f"User Chat Id: {user_chat_id}")
+    user_chat_id = update.message.chat_id  # получаем чат айди пользователя
+    add_new_user(user_chat_id)
+    logger.info(f"User with chat_id {user_chat_id} has started the bot.")
+
     await update.message.reply_text(
         "Hello! I`m a bot for getting a CNY exchange rate. Use /rate to get the current rate"
     )
@@ -40,49 +40,40 @@ async def rate(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         await update.message.reply_text("Не удалось получить курс, попробуйте позже.")
 
 
-# # Функция для проверки курса и отправки уведомления
-# async def check_rate(context: ContextTypes.DEFAULT_TYPE) -> None:
-#     global user_chat_id
-#     if user_chat_id:  # Проверяем, задан ли chat_id
-#         try:
-#             exchange_rate = get_cny_exchange_rate()
-#
-#             # Парсим курс из строки (ожидается, что buy_rate - это строка "Buy: XX.XX")
-#             buy_rate_str = exchange_rate.split("Buy: ")[1].split(" RUB")[0]
-#             buy_rate = float(buy_rate_str)
-#
-#             if buy_rate < LOWER_THRESHOLD:
-#                 await context.bot.send_message(
-#                     chat_id=user_chat_id,
-#                     text=f"🔔 Alert! CNY Exchange Rate Buy is now {buy_rate}₽, which is below {LOWER_THRESHOLD}₽!",
-#                 )
-#         except Exception as e:
-#             logger.error(f"Error in rate check: {e}")
+async def notify_users(message: str, context: ContextTypes.DEFAULT_TYPE):
+    # получаем всех пользователей из базы данных
+    user_ids = get_all_users()
+
+    # отправляем уведомление каждому пользователю
+    for user_id in user_ids:
+        await context.bot.send_message(
+            chat_id=user_id,
+            text=message,
+        )
 
 
 # Функция для проверки курса и отправки уведомления
 async def check_rate(context: ContextTypes.DEFAULT_TYPE) -> None:
-    global user_chat_id
-    if user_chat_id:  # Проверяем, задан ли chat_id
-        try:
-            exchange_rate = get_cny_exchange_rate()
+    try:
+        exchange_rate = get_cny_exchange_rate()
 
-            # Используем регулярное выражение для извлечения buy_rate
-            match = re.search(r"💹Buy:\s*([\d.,]+)₽", exchange_rate)
-            if match:
-                buy_rate = float(
-                    match.group(1).replace(",", ".")
-                )  # Извлекаем и конвертируем в float
+        # Используем регулярное выражение для извлечения buy_rate
+        match = re.search(r"💹Buy:\s*([\d.,]+)₽", exchange_rate)
+        if match:
+            buy_rate = float(
+                match.group(1).replace(",", ".")
+            )  # Извлекаем и конвертируем в float
 
-                if buy_rate < LOWER_THRESHOLD:
-                    await context.bot.send_message(
-                        chat_id=user_chat_id,
-                        text=f"🔔 Alert! CNY Exchange Rate:\n💹Buy: {buy_rate}₽, which is below {LOWER_THRESHOLD}₽!",
-                    )
-            else:
-                logger.error("Buy rate not found in exchange rate message.")
-        except Exception as e:
-            logger.error(f"Error in rate check: {e}")
+            if buy_rate < LOWER_THRESHOLD:
+                message = f"🔔 Alert! CNY Exchange Rate:\n💹Buy: {buy_rate}₽, which is below {LOWER_THRESHOLD}₽!"
+                await notify_users(
+                    message, context
+                )  # отправляем сообщение всем пользователям
+
+        else:
+            logger.error("Buy rate not found in exchange rate message.")
+    except Exception as e:
+        logger.error(f"Error in rate check: {e}")
 
 
 # Основная функция для запуска бота
@@ -98,7 +89,7 @@ def main() -> None:
     application.add_handler(CommandHandler("rate", rate))
 
     scheduler.add_job(
-        check_rate, "interval", minutes=1, args=[application]
+        check_rate, "interval", minutes=2, args=[application]
     )  # Проверка каждые 60 минут
     scheduler.start()
 
