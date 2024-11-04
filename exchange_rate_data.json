@@ -1,0 +1,4404 @@
+[
+    {
+        "code": "exchange_rates_mobile_app",
+        "image": null,
+        "name": "Курсы в мобильном приложении",
+        "showCity": false,
+        "isSegmentRates": false,
+        "content": null,
+        "converter": null,
+        "converterCurrencies": null,
+        "notificator": "Вы можете открыть счета в 7 валютах и обменивать деньги онлайн. Актуальные курсы — в <a href=\"/personal/page/app/\">мобильном приложении</a>.",
+        "text": {},
+        "sseConverter": {
+            "currencyFrom": {
+                "code": "RUB",
+                "title": "Российские рубли",
+                "sign": "₽"
+            },
+            "currencyTo": {
+                "code": "USD",
+                "title": "Доллары США",
+                "sign": "$"
+            },
+            "amount": 1,
+            "image": null
+        },
+        "sseConverterCurrencies": [
+            {
+                "code": "RUB",
+                "title": "Российские рубли",
+                "sign": "₽"
+            },
+            {
+                "code": "USD",
+                "title": "Доллары США",
+                "sign": "$"
+            },
+            {
+                "code": "EUR",
+                "title": "Евро",
+                "sign": "€"
+            },
+            {
+                "code": "CNY",
+                "title": "Китайский Юань",
+                "sign": "¥"
+            },
+            {
+                "code": "TRY",
+                "title": "Турецкая лира",
+                "sign": "₺"
+            },
+            {
+                "code": "KZT",
+                "title": "Казахстанский тенге",
+                "sign": "₸"
+            },
+            {
+                "code": "HKD",
+                "title": "Гонконгский доллар",
+                "sign": "HK$"
+            },
+            {
+                "code": "CHF",
+                "title": "Швейцарский франк",
+                "sign": "₣"
+            }
+        ],
+        "sseContent": {
+            "id": "6942795",
+            "name": "Курс валют",
+            "items": [
+                {
+                    "currency": "RUB",
+                    "currencyTitle": "Российские рубли",
+                    "currencySign": "₽",
+                    "ticker": "USD",
+                    "tickerTitle": "Доллары США",
+                    "tickerSign": "$",
+                    "sell": null,
+                    "sellDirection": null,
+                    "buy": null,
+                    "buyDirection": null,
+                    "isCrossCourse": false,
+                    "rateDate": null,
+                    "unit": 1
+                },
+                {
+                    "currency": "RUB",
+                    "currencyTitle": "Российские рубли",
+                    "currencySign": "₽",
+                    "ticker": "EUR",
+                    "tickerTitle": "Евро",
+                    "tickerSign": "€",
+                    "sell": null,
+                    "sellDirection": null,
+                    "buy": null,
+                    "buyDirection": null,
+                    "isCrossCourse": false,
+                    "rateDate": null,
+                    "unit": 1
+                },
+                {
+                    "currency": "RUB",
+                    "currencyTitle": "Российские рубли",
+                    "currencySign": "₽",
+                    "ticker": "CNY",
+                    "tickerTitle": "Китайский Юань",
+                    "tickerSign": "¥",
+                    "sell": null,
+                    "sellDirection": null,
+                    "buy": null,
+                    "buyDirection": null,
+                    "isCrossCourse": false,
+                    "rateDate": null,
+                    "unit": 1
+                },
+                {
+                    "currency": "RUB",
+                    "currencyTitle": "Российские рубли",
+                    "currencySign": "₽",
+                    "ticker": "TRY",
+                    "tickerTitle": "Турецкая лира",
+                    "tickerSign": "₺",
+                    "sell": null,
+                    "sellDirection": null,
+                    "buy": null,
+                    "buyDirection": null,
+                    "isCrossCourse": false,
+                    "rateDate": null,
+                    "unit": 1
+                },
+                {
+                    "currency": "RUB",
+                    "currencyTitle": "Российские рубли",
+                    "currencySign": "₽",
+                    "ticker": "KZT",
+                    "tickerTitle": "Казахстанский тенге",
+                    "tickerSign": "₸",
+                    "sell": null,
+                    "sellDirection": null,
+                    "buy": null,
+                    "buyDirection": null,
+                    "isCrossCourse": false,
+                    "rateDate": null,
+                    "unit": 1
+                },
+                {
+                    "currency": "RUB",
+                    "currencyTitle": "Российские рубли",
+                    "currencySign": "₽",
+                    "ticker": "HKD",
+                    "tickerTitle": "Гонконгский доллар",
+                    "tickerSign": "HK$",
+                    "sell": null,
+                    "sellDirection": null,
+                    "buy": null,
+                    "buyDirection": null,
+                    "isCrossCourse": false,
+                    "rateDate": null,
+                    "unit": 1
+                },
+                {
+                    "currency": "RUB",
+                    "currencyTitle": "Российские рубли",
+                    "currencySign": "₽",
+                    "ticker": "CHF",
+                    "tickerTitle": "Швейцарский франк",
+                    "tickerSign": "₣",
+                    "sell": null,
+                    "sellDirection": null,
+                    "buy": null,
+                    "buyDirection": null,
+                    "isCrossCourse": false,
+                    "rateDate": null,
+                    "unit": 1
+                }
+            ],
+            "updated": null
+        }
+    },
+    {
+        "code": "exchange_rates_internet_bank",
+        "image": null,
+        "name": "Курсы в интернет банке",
+        "showCity": false,
+        "isSegmentRates": false,
+        "content": [
+            {
+                "id": 1,
+                "name": "Курсы интернет банка",
+                "items": [
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "USD",
+                        "tickerTitle": "Доллары США",
+                        "tickerSign": "$",
+                        "sell": "99",
+                        "sellRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "99",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "98.86",
+                                "reverseSumFrom": 98860
+                            },
+                            {
+                                "sumFrom": 15000,
+                                "rate": "98.76",
+                                "reverseSumFrom": 1481400
+                            }
+                        ],
+                        "sellDirection": "",
+                        "buy": "85",
+                        "buyRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "85",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "85.07",
+                                "reverseSumFrom": 85070
+                            },
+                            {
+                                "sumFrom": 15000,
+                                "rate": "85.12",
+                                "reverseSumFrom": 1276800
+                            }
+                        ],
+                        "buyDirection": "",
+                        "unit": 1,
+                        "isCrossCourse": false,
+                        "sumFrom": "0",
+                        "rateDate": "2024-11-04 00:03:00"
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "EUR",
+                        "tickerTitle": "Евро",
+                        "tickerSign": "€",
+                        "sell": "107.5",
+                        "sellRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "107.5",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "107.36",
+                                "reverseSumFrom": 107360
+                            },
+                            {
+                                "sumFrom": 15000,
+                                "rate": "107.26",
+                                "reverseSumFrom": 1608900
+                            }
+                        ],
+                        "sellDirection": "",
+                        "buy": "103.6",
+                        "buyRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "103.6",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "103.67",
+                                "reverseSumFrom": 103670
+                            },
+                            {
+                                "sumFrom": 15000,
+                                "rate": "103.72",
+                                "reverseSumFrom": 1555800
+                            }
+                        ],
+                        "buyDirection": "",
+                        "unit": 1,
+                        "isCrossCourse": false,
+                        "sumFrom": "0",
+                        "rateDate": "2024-11-04 00:03:00"
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "CNY",
+                        "tickerTitle": "Китайский Юань",
+                        "tickerSign": "¥",
+                        "sell": "14.4",
+                        "sellRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "14.4",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "14.35",
+                                "reverseSumFrom": 14350
+                            },
+                            {
+                                "sumFrom": 15000,
+                                "rate": "14.32",
+                                "reverseSumFrom": 214800
+                            }
+                        ],
+                        "sellDirection": "",
+                        "buy": "12.9",
+                        "buyRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "12.9",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "12.95",
+                                "reverseSumFrom": 12950
+                            },
+                            {
+                                "sumFrom": 15000,
+                                "rate": "12.98",
+                                "reverseSumFrom": 194700
+                            }
+                        ],
+                        "buyDirection": "",
+                        "unit": 1,
+                        "isCrossCourse": false,
+                        "sumFrom": "0",
+                        "rateDate": "2024-11-04 00:03:00"
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "GBP",
+                        "tickerTitle": "Фунт стерлингов",
+                        "tickerSign": "£",
+                        "sell": "160",
+                        "sellRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "160",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "158.6",
+                                "reverseSumFrom": 158600
+                            },
+                            {
+                                "sumFrom": 15000,
+                                "rate": "157.6",
+                                "reverseSumFrom": 2364000
+                            }
+                        ],
+                        "sellDirection": "",
+                        "buy": "67.5",
+                        "buyRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "67.5",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "68.02",
+                                "reverseSumFrom": 68020
+                            },
+                            {
+                                "sumFrom": 15000,
+                                "rate": "68.4",
+                                "reverseSumFrom": 1026000.0000000001
+                            }
+                        ],
+                        "buyDirection": "",
+                        "unit": 1,
+                        "isCrossCourse": false,
+                        "sumFrom": "0",
+                        "rateDate": "2024-11-04 00:03:00"
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "CHF",
+                        "tickerTitle": "Швейцарский франк",
+                        "tickerSign": "₣",
+                        "sell": "150",
+                        "sellRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "150",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "148.6",
+                                "reverseSumFrom": 148600
+                            },
+                            {
+                                "sumFrom": 15000,
+                                "rate": "147.6",
+                                "reverseSumFrom": 2214000
+                            }
+                        ],
+                        "sellDirection": "",
+                        "buy": "57.5",
+                        "buyRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "57.5",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "58.02",
+                                "reverseSumFrom": 58020
+                            },
+                            {
+                                "sumFrom": 15000,
+                                "rate": "58.4",
+                                "reverseSumFrom": 876000
+                            }
+                        ],
+                        "buyDirection": "",
+                        "unit": 1,
+                        "isCrossCourse": false,
+                        "sumFrom": "0",
+                        "rateDate": "2024-11-04 00:03:00"
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "XAU",
+                        "tickerTitle": "Золото",
+                        "tickerSign": "",
+                        "sell": "8784.88",
+                        "sellRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "8784.88",
+                                "reverseSumFrom": 0
+                            }
+                        ],
+                        "sellDirection": "",
+                        "buy": "8099.23",
+                        "buyRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "8099.23",
+                                "reverseSumFrom": 0
+                            }
+                        ],
+                        "buyDirection": "",
+                        "unit": 1,
+                        "isCrossCourse": false,
+                        "sumFrom": "0",
+                        "rateDate": "2024-11-04 00:04:00"
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "KZT",
+                        "tickerTitle": "Казахстанский тенге",
+                        "tickerSign": "₸",
+                        "sell": "0.23",
+                        "sellRates": [
+                            {
+                                "sumFrom": 15000,
+                                "rate": "0.23",
+                                "reverseSumFrom": 3450
+                            },
+                            {
+                                "sumFrom": 0,
+                                "rate": "0.23",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "0.23",
+                                "reverseSumFrom": 230
+                            }
+                        ],
+                        "sellDirection": "",
+                        "buy": "0.17",
+                        "buyRates": [
+                            {
+                                "sumFrom": 15000,
+                                "rate": "0.17",
+                                "reverseSumFrom": 2550
+                            },
+                            {
+                                "sumFrom": 0,
+                                "rate": "0.17",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "0.17",
+                                "reverseSumFrom": 170
+                            }
+                        ],
+                        "buyDirection": "",
+                        "unit": 1,
+                        "isCrossCourse": false,
+                        "sumFrom": "0",
+                        "rateDate": "2024-11-04 00:03:00"
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "TRY",
+                        "tickerTitle": "Турецкая лира",
+                        "tickerSign": "",
+                        "sell": "3.6",
+                        "sellRates": [
+                            {
+                                "sumFrom": 15000,
+                                "rate": "3.48",
+                                "reverseSumFrom": 52200
+                            },
+                            {
+                                "sumFrom": 0,
+                                "rate": "3.6",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "3.53",
+                                "reverseSumFrom": 3530
+                            }
+                        ],
+                        "sellDirection": "",
+                        "buy": "1.45",
+                        "buyRates": [
+                            {
+                                "sumFrom": 15000,
+                                "rate": "1.57",
+                                "reverseSumFrom": 23550
+                            },
+                            {
+                                "sumFrom": 0,
+                                "rate": "1.45",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "1.52",
+                                "reverseSumFrom": 1520
+                            }
+                        ],
+                        "buyDirection": "",
+                        "unit": 1,
+                        "isCrossCourse": false,
+                        "sumFrom": "0",
+                        "rateDate": "2024-11-04 00:03:00"
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "HKD",
+                        "tickerTitle": "Гонконгский доллар",
+                        "tickerSign": "",
+                        "sell": "15.1",
+                        "sellRates": [
+                            {
+                                "sumFrom": 15000,
+                                "rate": "14.97",
+                                "reverseSumFrom": 224550
+                            },
+                            {
+                                "sumFrom": 0,
+                                "rate": "15.1",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "15.02",
+                                "reverseSumFrom": 15020
+                            }
+                        ],
+                        "sellDirection": "",
+                        "buy": "5.9",
+                        "buyRates": [
+                            {
+                                "sumFrom": 15000,
+                                "rate": "6.03",
+                                "reverseSumFrom": 90450
+                            },
+                            {
+                                "sumFrom": 0,
+                                "rate": "5.9",
+                                "reverseSumFrom": 0
+                            },
+                            {
+                                "sumFrom": 1000,
+                                "rate": "5.98",
+                                "reverseSumFrom": 5980
+                            }
+                        ],
+                        "buyDirection": "",
+                        "unit": 1,
+                        "isCrossCourse": false,
+                        "sumFrom": "0",
+                        "rateDate": "2024-11-04 00:03:00"
+                    }
+                ],
+                "updated": "Курс актуален на 00:04, 04.11.2024"
+            }
+        ],
+        "converter": null,
+        "converterCurrencies": null,
+        "notificator": "Обмен валюты по выгодному курсу. Если вы еще не клиент банка, <a href=\"/personal/cards/6287601/\">закажите карту</a> с доставкой на дом всего за пару минут.",
+        "text": {},
+        "sseConverter": null,
+        "sseConverterCurrencies": null,
+        "sseContent": null
+    },
+    {
+        "code": "exchange_rates_office_cash",
+        "image": null,
+        "name": "В отделении (наличные)",
+        "showCity": true,
+        "isSegmentRates": false,
+        "content": [
+            {
+                "id": 2,
+                "name": "Курс валют в отделениях (наличные)",
+                "items": [
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "USD",
+                        "tickerTitle": "Доллары США",
+                        "tickerSign": "$",
+                        "sell": "98.5",
+                        "sellRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "98.5",
+                                "reverseSumFrom": 0
+                            }
+                        ],
+                        "sellDirection": "equal",
+                        "buy": "92",
+                        "buyRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "92",
+                                "reverseSumFrom": 0
+                            }
+                        ],
+                        "buyDirection": "equal",
+                        "isCrossCourse": false,
+                        "rateDate": "2024-11-04 00:01:00",
+                        "cashlessRateDate": "2024-11-04 00:01:00",
+                        "sumFrom": "0",
+                        "unit": 1
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "EUR",
+                        "tickerTitle": "Евро",
+                        "tickerSign": "€",
+                        "sell": "107.3",
+                        "sellRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "107.3",
+                                "reverseSumFrom": 0
+                            }
+                        ],
+                        "sellDirection": "equal",
+                        "buy": "104",
+                        "buyRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "104",
+                                "reverseSumFrom": 0
+                            }
+                        ],
+                        "buyDirection": "equal",
+                        "isCrossCourse": false,
+                        "rateDate": "2024-11-04 00:01:00",
+                        "cashlessRateDate": "2024-11-04 00:01:00",
+                        "sumFrom": "0",
+                        "unit": 1
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "CNY",
+                        "tickerTitle": "Китайский Юань",
+                        "tickerSign": "¥",
+                        "sell": "14.95",
+                        "sellRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "14.95",
+                                "reverseSumFrom": 0
+                            }
+                        ],
+                        "sellDirection": "equal",
+                        "buy": "12.4",
+                        "buyRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "12.4",
+                                "reverseSumFrom": 0
+                            }
+                        ],
+                        "buyDirection": "equal",
+                        "isCrossCourse": false,
+                        "rateDate": "2024-11-04 00:01:00",
+                        "cashlessRateDate": "2024-11-04 00:01:00",
+                        "sumFrom": "0",
+                        "unit": 1
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "GBP",
+                        "tickerTitle": "Фунт стерлингов",
+                        "tickerSign": "£",
+                        "sell": "157",
+                        "sellRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "157",
+                                "reverseSumFrom": 0
+                            }
+                        ],
+                        "sellDirection": "equal",
+                        "buy": "61.8",
+                        "buyRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "61.8",
+                                "reverseSumFrom": 0
+                            }
+                        ],
+                        "buyDirection": "equal",
+                        "isCrossCourse": false,
+                        "rateDate": "2024-11-04 00:01:00",
+                        "cashlessRateDate": "2024-11-04 00:01:00",
+                        "sumFrom": "0",
+                        "unit": 1
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "CHF",
+                        "tickerTitle": "Швейцарский франк",
+                        "tickerSign": "₣",
+                        "sell": "147",
+                        "sellRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "147",
+                                "reverseSumFrom": 0
+                            }
+                        ],
+                        "sellDirection": "equal",
+                        "buy": "51.8",
+                        "buyRates": [
+                            {
+                                "sumFrom": 0,
+                                "rate": "51.8",
+                                "reverseSumFrom": 0
+                            }
+                        ],
+                        "buyDirection": "equal",
+                        "isCrossCourse": false,
+                        "rateDate": "2024-11-04 00:01:00",
+                        "cashlessRateDate": "2024-11-04 00:01:00",
+                        "sumFrom": "0",
+                        "unit": 1
+                    }
+                ],
+                "updated": "Курс актуален на 00:01, 04.11.2024"
+            }
+        ],
+        "converter": [
+            {
+                "val1": "RUR",
+                "val2": "CNY",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "14.95",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "CNY",
+                "val2": "RUR",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "12.4",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "CHF",
+                "val2": "EUR",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "1.71703",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "EUR",
+                "val2": "CHF",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "0.7106",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "CNY",
+                "val2": "EUR",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "8.48479",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "EUR",
+                "val2": "CNY",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "7.1801",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "RUR",
+                "val2": "EUR",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "107.3",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "EUR",
+                "val2": "RUR",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "104",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "USD",
+                "val2": "EUR",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "1.1422",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "EUR",
+                "val2": "USD",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "1.0238",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "CHF",
+                "val2": "GBP",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "2.26295",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "GBP",
+                "val2": "CHF",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "0.4677",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "CNY",
+                "val2": "GBP",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "11.0887",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "GBP",
+                "val2": "CNY",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "4.93525",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "EUR",
+                "val2": "GBP",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "1.41523",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "GBP",
+                "val2": "EUR",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "0.6304",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "RUR",
+                "val2": "GBP",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "157",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "GBP",
+                "val2": "RUR",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "61.8",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "USD",
+                "val2": "GBP",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "1.59668",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "GBP",
+                "val2": "USD",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "0.6859",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "CHF",
+                "val2": "USD",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "1.57257",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "USD",
+                "val2": "CHF",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "0.6274",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "RUR",
+                "val2": "CHF",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "147",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "CHF",
+                "val2": "RUR",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "51.8",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "RUR",
+                "val2": "USD",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "98.5",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "USD",
+                "val2": "RUR",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "92",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "CHF",
+                "val2": "CNY",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "0.23522",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "CNY",
+                "val2": "CHF",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "0.097249",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "CNY",
+                "val2": "USD",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "7.76615",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "USD",
+                "val2": "CNY",
+                "rate": null,
+                "rates": [
+                    {
+                        "sumFrom": 0,
+                        "rate": "6.34986",
+                        "reverseSumFrom": 0
+                    }
+                ],
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 00:01, 04.11.2024",
+                "isVal1Base": true
+            }
+        ],
+        "converterCurrencies": [
+            {
+                "code": "RUR",
+                "title": "Российские рубли",
+                "sign": "₽"
+            },
+            {
+                "code": "USD",
+                "title": "Доллары США",
+                "sign": "$"
+            },
+            {
+                "code": "EUR",
+                "title": "Евро",
+                "sign": "€"
+            },
+            {
+                "code": "CNY",
+                "title": "Китайский Юань",
+                "sign": "¥"
+            },
+            {
+                "code": "GBP",
+                "title": "Фунт стерлингов",
+                "sign": "£"
+            },
+            {
+                "code": "CHF",
+                "title": "Швейцарский франк",
+                "sign": "₣"
+            }
+        ],
+        "notificator": "В наших кассах всегда можно быстро обменять валюту по актуальному курсу.",
+        "text": {},
+        "sseConverter": null,
+        "sseConverterCurrencies": null,
+        "sseContent": null
+    },
+    {
+        "code": "exchange_rates_office_cashless",
+        "image": null,
+        "name": "В отделении (безналичные)",
+        "showCity": true,
+        "isSegmentRates": true,
+        "content": {
+            "segment_regular": [
+                {
+                    "id": 3,
+                    "name": "Курс валют в отделениях (безналично)",
+                    "items": [
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "USD",
+                            "tickerTitle": "Доллары США",
+                            "tickerSign": "$",
+                            "sell": "99.2",
+                            "sellRates": null,
+                            "sellDirection": "equal",
+                            "buy": "84.8",
+                            "buyRates": null,
+                            "buyDirection": "equal",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        },
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "EUR",
+                            "tickerTitle": "Евро",
+                            "tickerSign": "€",
+                            "sell": "107.7",
+                            "sellRates": null,
+                            "sellDirection": "equal",
+                            "buy": "103.4",
+                            "buyRates": null,
+                            "buyDirection": "equal",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        },
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "CNY",
+                            "tickerTitle": "Китайский Юань",
+                            "tickerSign": "¥",
+                            "sell": "14.7",
+                            "sellRates": null,
+                            "sellDirection": "equal",
+                            "buy": "12.6",
+                            "buyRates": null,
+                            "buyDirection": "equal",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        },
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "GBP",
+                            "tickerTitle": "Фунт стерлингов",
+                            "tickerSign": "£",
+                            "sell": "161",
+                            "sellRates": null,
+                            "sellDirection": "equal",
+                            "buy": "67",
+                            "buyRates": null,
+                            "buyDirection": "equal",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        },
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "CHF",
+                            "tickerTitle": "Швейцарский франк",
+                            "tickerSign": "₣",
+                            "sell": "151",
+                            "sellRates": null,
+                            "sellDirection": "equal",
+                            "buy": "57",
+                            "buyRates": null,
+                            "buyDirection": "equal",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        },
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "KZT",
+                            "tickerTitle": "Казахстанский тенге",
+                            "tickerSign": "₸",
+                            "sell": "0.24",
+                            "sellRates": null,
+                            "sellDirection": "equal",
+                            "buy": "0.17",
+                            "buyRates": null,
+                            "buyDirection": "equal",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        },
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "TRY",
+                            "tickerTitle": "Турецкая лира",
+                            "tickerSign": "",
+                            "sell": "3.6",
+                            "sellRates": null,
+                            "sellDirection": "equal",
+                            "buy": "1.45",
+                            "buyRates": null,
+                            "buyDirection": "equal",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        },
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "HKD",
+                            "tickerTitle": "Гонконгский доллар",
+                            "tickerSign": "",
+                            "sell": "17.2",
+                            "sellRates": null,
+                            "sellDirection": "equal",
+                            "buy": "3.8",
+                            "buyRates": null,
+                            "buyDirection": "equal",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        }
+                    ],
+                    "updated": "Курс актуален на 00:01, 04.11.2024"
+                }
+            ],
+            "segment_premium": [
+                {
+                    "id": 4,
+                    "name": "Курс валют в отделениях (безналично)",
+                    "items": [
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "USD",
+                            "tickerTitle": "Доллары США",
+                            "tickerSign": "$",
+                            "sell": "99.1",
+                            "sellRates": null,
+                            "sellDirection": "up",
+                            "buy": "84.9",
+                            "buyRates": null,
+                            "buyDirection": "up",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        },
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "EUR",
+                            "tickerTitle": "Евро",
+                            "tickerSign": "€",
+                            "sell": "107.6",
+                            "sellRates": null,
+                            "sellDirection": "up",
+                            "buy": "103.5",
+                            "buyRates": null,
+                            "buyDirection": "up",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        },
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "CNY",
+                            "tickerTitle": "Китайский Юань",
+                            "tickerSign": "¥",
+                            "sell": "14.6",
+                            "sellRates": null,
+                            "sellDirection": "up",
+                            "buy": "12.7",
+                            "buyRates": null,
+                            "buyDirection": "up",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        },
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "GBP",
+                            "tickerTitle": "Фунт стерлингов",
+                            "tickerSign": "£",
+                            "sell": "160",
+                            "sellRates": null,
+                            "sellDirection": "up",
+                            "buy": "67.5",
+                            "buyRates": null,
+                            "buyDirection": "up",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        },
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "CHF",
+                            "tickerTitle": "Швейцарский франк",
+                            "tickerSign": "₣",
+                            "sell": "150",
+                            "sellRates": null,
+                            "sellDirection": "up",
+                            "buy": "57.5",
+                            "buyRates": null,
+                            "buyDirection": "up",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        },
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "KZT",
+                            "tickerTitle": "Казахстанский тенге",
+                            "tickerSign": "₸",
+                            "sell": "0.24",
+                            "sellRates": null,
+                            "sellDirection": "equal",
+                            "buy": "0.18",
+                            "buyRates": null,
+                            "buyDirection": "equal",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        },
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "TRY",
+                            "tickerTitle": "Турецкая лира",
+                            "tickerSign": "",
+                            "sell": "3.56",
+                            "sellRates": null,
+                            "sellDirection": "equal",
+                            "buy": "1.49",
+                            "buyRates": null,
+                            "buyDirection": "equal",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        },
+                        {
+                            "currency": "RUR",
+                            "currencyTitle": "Российские рубли",
+                            "currencySign": "₽",
+                            "ticker": "HKD",
+                            "tickerTitle": "Гонконгский доллар",
+                            "tickerSign": "",
+                            "sell": "17",
+                            "sellRates": null,
+                            "sellDirection": "equal",
+                            "buy": "4",
+                            "buyRates": null,
+                            "buyDirection": "equal",
+                            "isCrossCourse": false,
+                            "rateDate": "2024-11-04 00:01:00",
+                            "cashlessRateDate": "2024-11-04 00:01:00",
+                            "sumFrom": "0",
+                            "unit": 1
+                        }
+                    ],
+                    "updated": "Курс актуален на 10:40, 04.11.2024"
+                }
+            ]
+        },
+        "converter": {
+            "segment_regular": [
+                {
+                    "val1": "RUR",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "14.7",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "12.6",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "1.74642",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.6897",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "8.34467",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "7.12078",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "107.7",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "103.4",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "USD",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "1.16918",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.9968",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "2.29043",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.4404",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "11.0825",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "4.68602",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "1.42898",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.6084",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "161",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "67",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "USD",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "1.7301",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.6532",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "1.60205",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "USD",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.5603",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "151",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "57",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "99.2",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "USD",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "84.8",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.248178",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.097333",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "7.64532",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "USD",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "5.83746",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "715.82",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "267.886",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "75.3807",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "61.219",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "581.057",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "475.028",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "772.201",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "311.664",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.24",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.17",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "532.481",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "USD",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "389.333",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "55.8659",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "22.0727",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "5.9988",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "4.8249",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "46.2963",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "37.439",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "60.241",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "25.6216",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.0896",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.069",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "3.6",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "1.45",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "42.3729",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "USD",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "30.6835",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "14.881",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "USD",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "5.2032",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.0314",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.0118",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "17.2",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "3.8",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "21.2766",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "4.0893",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.398804",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.1477",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "19.7239",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "3.4821",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "16.2075",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "6.4046",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "2.10349",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.825",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                }
+            ],
+            "segment_premium": [
+                {
+                    "val1": "CHF",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.248178",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.097333",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "14.6",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "12.7",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "1.74642",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.6897",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "107.6",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "103.5",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "1.42898",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.6084",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "160",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "67.5",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "1.60205",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "USD",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.5603",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "150",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "57.5",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "8.34467",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "7.12078",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "USD",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "1.16918",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.9968",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "2.29043",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.4404",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "11.0825",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "4.68602",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "USD",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "1.7301",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.6532",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "7.64532",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "USD",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "5.83746",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "99.1",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "USD",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "84.9",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "581.057",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "475.028",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "772.201",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "311.664",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "715.82",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "267.886",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "75.3807",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "61.219",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.24",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.18",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "532.481",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "USD",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "389.333",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "55.8659",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "22.0727",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "5.9988",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "4.8249",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "46.2963",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "37.439",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "60.241",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "25.6216",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.0896",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.069",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "3.56",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "1.49",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "42.3729",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "USD",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "30.6835",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "CNY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "2.10349",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CNY",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.825",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "KZT",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.0314",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "KZT",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.0118",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "CHF",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "19.7239",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "CHF",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "3.4821",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "USD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "14.881",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "USD",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "5.2032",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "GBP",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "21.2766",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "GBP",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "4.0893",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "EUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "16.2075",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "EUR",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "6.4046",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "TRY",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.398804",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "TRY",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "0.1477",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                },
+                {
+                    "val1": "RUR",
+                    "val2": "HKD",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "17",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": false,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": false
+                },
+                {
+                    "val1": "HKD",
+                    "val2": "RUR",
+                    "rate": null,
+                    "rates": [
+                        {
+                            "sumFrom": 0,
+                            "rate": "4",
+                            "reverseSumFrom": 0
+                        }
+                    ],
+                    "units": 1,
+                    "isCross": true,
+                    "date": "Курс актуален на 00:01, 04.11.2024",
+                    "isVal1Base": true
+                }
+            ]
+        },
+        "converterCurrencies": [
+            {
+                "code": "RUR",
+                "title": "Российские рубли",
+                "sign": "₽"
+            },
+            {
+                "code": "USD",
+                "title": "Доллары США",
+                "sign": "$"
+            },
+            {
+                "code": "EUR",
+                "title": "Евро",
+                "sign": "€"
+            },
+            {
+                "code": "CNY",
+                "title": "Китайский Юань",
+                "sign": "¥"
+            },
+            {
+                "code": "GBP",
+                "title": "Фунт стерлингов",
+                "sign": "£"
+            },
+            {
+                "code": "CHF",
+                "title": "Швейцарский франк",
+                "sign": "₣"
+            },
+            {
+                "code": "KZT",
+                "title": "Казахстанский тенге",
+                "sign": "₸"
+            },
+            {
+                "code": "TRY",
+                "title": "Турецкая лира",
+                "sign": ""
+            },
+            {
+                "code": "HKD",
+                "title": "Гонконгский доллар",
+                "sign": ""
+            }
+        ],
+        "notificator": "Если у вас есть счета в банке, сотрудник отделения поможет мгновенно провести конверсионную операцию. Или откроет счета в нужной валюте",
+        "text": {
+            "ogon": "У меня есть <a href=\"https://ogon.ru/?utm_partner_id=6&utm_target=partner_client_meta&utm_source=gpb&utm_medium=calc_exchange\">подписка Газпром Бонус</a>"
+        },
+        "sseConverter": null,
+        "sseConverterCurrencies": null,
+        "sseContent": null
+    },
+    {
+        "code": "exchange_rates_cards",
+        "image": null,
+        "name": "Конвертация по картам",
+        "isSegmentRates": false,
+        "content": [
+            {
+                "id": 798,
+                "name": "Курсы иностранных валют к рублю Российской Федерации",
+                "items": [
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "USD",
+                        "tickerTitle": "Доллары США",
+                        "tickerSign": "$",
+                        "sell": "97.65",
+                        "sellRates": null,
+                        "sellDirection": "up",
+                        "buy": "90.6",
+                        "buyRates": null,
+                        "buyDirection": "down",
+                        "unit": 1,
+                        "isCrossCourse": false,
+                        "sumFrom": null,
+                        "rateDate": null
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "EUR",
+                        "tickerTitle": "Евро",
+                        "tickerSign": "€",
+                        "sell": "106.05",
+                        "sellRates": null,
+                        "sellDirection": "up",
+                        "buy": "100.75",
+                        "buyRates": null,
+                        "buyDirection": "up",
+                        "unit": 1,
+                        "isCrossCourse": false,
+                        "sumFrom": null,
+                        "rateDate": null
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "CNY",
+                        "tickerTitle": "Китайский юань",
+                        "tickerSign": "¥",
+                        "sell": "14.51",
+                        "sellRates": null,
+                        "sellDirection": "down",
+                        "buy": "13.21",
+                        "buyRates": null,
+                        "buyDirection": "up",
+                        "unit": 1,
+                        "isCrossCourse": false,
+                        "sumFrom": null,
+                        "rateDate": null
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "KZT",
+                        "tickerTitle": "Казахстанские тенге",
+                        "tickerSign": "₸",
+                        "sell": "0.21",
+                        "sellRates": null,
+                        "sellDirection": "up",
+                        "buy": "0.19",
+                        "buyRates": null,
+                        "buyDirection": "up",
+                        "unit": 1,
+                        "isCrossCourse": false,
+                        "sumFrom": null,
+                        "rateDate": null
+                    },
+                    {
+                        "currency": "RUR",
+                        "currencyTitle": "Российские рубли",
+                        "currencySign": "₽",
+                        "ticker": "JPY",
+                        "tickerTitle": "Японские иены",
+                        "tickerSign": "Ұ",
+                        "sell": "0.689",
+                        "sellRates": null,
+                        "sellDirection": "up",
+                        "buy": "0.584",
+                        "buyRates": null,
+                        "buyDirection": "up",
+                        "unit": 1,
+                        "isCrossCourse": false,
+                        "sumFrom": null,
+                        "rateDate": null
+                    }
+                ],
+                "updated": "Курс актуален на 00:00, 01.11.2024"
+            }
+        ],
+        "converter": [
+            {
+                "val1": "USD",
+                "val2": "KZT",
+                "rate": "0.002222",
+                "rates": null,
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "KZT",
+                "val2": "USD",
+                "rate": "0.002007",
+                "rates": null,
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "USD",
+                "val2": "JPY",
+                "rate": "0.007498",
+                "rates": null,
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "JPY",
+                "val2": "USD",
+                "rate": "0.006092",
+                "rates": null,
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "USD",
+                "val2": "CNY",
+                "rate": "0.156076",
+                "rates": null,
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "CNY",
+                "val2": "USD",
+                "rate": "0.137328",
+                "rates": null,
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "EUR",
+                "val2": "KZT",
+                "rate": "0.002003",
+                "rates": null,
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "KZT",
+                "val2": "EUR",
+                "rate": "0.001843",
+                "rates": null,
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "EUR",
+                "val2": "JPY",
+                "rate": "0.006758",
+                "rates": null,
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "JPY",
+                "val2": "EUR",
+                "rate": "0.005596",
+                "rates": null,
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "EUR",
+                "val2": "CNY",
+                "rate": "0.140679",
+                "rates": null,
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "CNY",
+                "val2": "EUR",
+                "rate": "0.126135",
+                "rates": null,
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "RUR",
+                "val2": "USD",
+                "rate": "97.65",
+                "rates": null,
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "USD",
+                "val2": "RUR",
+                "rate": "90.6",
+                "rates": null,
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "RUR",
+                "val2": "EUR",
+                "rate": "106.05",
+                "rates": null,
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "EUR",
+                "val2": "RUR",
+                "rate": "100.75",
+                "rates": null,
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "RUR",
+                "val2": "KZT",
+                "rate": "0.21",
+                "rates": null,
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "KZT",
+                "val2": "RUR",
+                "rate": "0.19",
+                "rates": null,
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "RUR",
+                "val2": "JPY",
+                "rate": "0.689",
+                "rates": null,
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "JPY",
+                "val2": "RUR",
+                "rate": "0.584",
+                "rates": null,
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "RUR",
+                "val2": "CNY",
+                "rate": "14.51",
+                "rates": null,
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "CNY",
+                "val2": "RUR",
+                "rate": "13.21",
+                "rates": null,
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": true
+            },
+            {
+                "val1": "USD",
+                "val2": "EUR",
+                "rate": "1.1272",
+                "rates": null,
+                "units": 1,
+                "isCross": false,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": false
+            },
+            {
+                "val1": "EUR",
+                "val2": "USD",
+                "rate": "1.0438",
+                "rates": null,
+                "units": 1,
+                "isCross": true,
+                "date": "Курс актуален на 10:00, 04.11.2024",
+                "isVal1Base": true
+            }
+        ],
+        "converterCurrencies": [
+            {
+                "code": "RUR",
+                "title": "Российские рубли",
+                "sign": "₽"
+            },
+            {
+                "code": "USD",
+                "title": "Доллары США",
+                "sign": "$"
+            },
+            {
+                "code": "EUR",
+                "title": "Евро",
+                "sign": "€"
+            },
+            {
+                "code": "CNY",
+                "title": "Китайский юань",
+                "sign": "¥"
+            },
+            {
+                "code": "KZT",
+                "title": "Казахстанские тенге",
+                "sign": "₸"
+            },
+            {
+                "code": "JPY",
+                "title": "Японские иены",
+                "sign": "Ұ"
+            }
+        ],
+        "notificator": "За покупки в валюте вы можете расплачиваться вашей рублевой картой.",
+        "text": {},
+        "sseConverter": null,
+        "sseConverterCurrencies": null,
+        "sseContent": null
+    }
+]
