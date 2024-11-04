@@ -5,7 +5,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import logging
 
-from mongoDB_database import get_all_users, add_new_user
+from mongoDB_database import get_all_users, add_new_user, remove_user
 from parser import get_cny_exchange_rate  # Импортируем ваш парсер
 
 # Настройка логирования
@@ -16,7 +16,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Константа для предела курса
-LOWER_THRESHOLD = 15.00
+LOWER_THRESHOLD = 14.00
 
 
 # Функция для обработки команды /start
@@ -26,7 +26,17 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     logger.info(f"User with chat_id {user_chat_id} has started the bot.")
 
     await update.message.reply_text(
-        "Hello! I`m a bot for getting a CNY exchange rate. Use /rate to get the current rate"
+        "Hello! I`m a bot for getting a CNY exchange rate.\nUse /rate to get the current rate"
+    )
+
+
+async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    user_chat_id = update.message.chat_id  # получаем чат айди пользователя
+    remove_user(user_chat_id)  # удаляем из базы данных
+    logger.info(f"User with chat_id: {user_chat_id} has stopped the bot.")
+
+    await update.message.reply_text(
+        "You have been unsubcribed from the CNY exchange rate alerts.\nUse /start to get them again."
     )
 
 
@@ -87,9 +97,10 @@ def main() -> None:
     # Регистрация обработчиков команд
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("rate", rate))
+    application.add_handler(CommandHandler("stop", stop))
 
     scheduler.add_job(
-        check_rate, "interval", minutes=2, args=[application]
+        check_rate, "interval", minutes=60, args=[application]
     )  # Проверка каждые 60 минут
     scheduler.start()
 

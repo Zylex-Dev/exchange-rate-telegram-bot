@@ -15,3 +15,8 @@ def add_new_user(user_chat_id):
     # добавляем пользователя в базу данных, если его еще нет
     if not users_collection.find_one({"chat_id": user_chat_id}):
         users_collection.insert_one({"chat_id": user_chat_id})
+
+
+def remove_user(user_chat_id):
+    # удаляем пользователя по чат айди из базы данных
+    users_collection.delete_one({"chat_id": user_chat_id})
