@@ -5,7 +5,12 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import logging
 
-from mongoDB_database import get_all_users, add_new_user, remove_user
+from mongoDB_database import (
+    get_all_users,
+    add_new_user,
+    remove_user,
+    update_user_alert_rate,
+)
 from parser import get_cny_exchange_rate  # Импортируем ваш парсер
 
 # Настройка логирования
@@ -50,16 +55,23 @@ async def rate(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         await update.message.reply_text("Не удалось получить курс, попробуйте позже.")
 
 
-async def notify_users(message: str, context: ContextTypes.DEFAULT_TYPE):
-    # получаем всех пользователей из базы данных
-    user_ids = get_all_users()
+async def notify_users(
+    message: str, buy_rate: float, context: ContextTypes.DEFAULT_TYPE
+):
+    # Получаем всех пользователей и их последний зафиксированный курс
+    users = get_all_users()
 
-    # отправляем уведомление каждому пользователю
-    for user_id in user_ids:
-        await context.bot.send_message(
-            chat_id=user_id,
-            text=message,
-        )
+    for user in users:
+        user_id = user["chat_id"]
+        last_alerted_rate = user.get("last_alerted_rate")
+
+        if last_alerted_rate != buy_rate:  # уведомление только если курс изменился
+            await context.bot.send_message(
+                chat_id=user_id,
+                text=message,
+            )
+            # обновляем last_alerted_rate после отправки уведомления
+            update_user_alert_rate(user_id, buy_rate)
 
 
 # Функция для проверки курса и отправки уведомления
@@ -77,8 +89,8 @@ async def check_rate(context: ContextTypes.DEFAULT_TYPE) -> None:
             if buy_rate < LOWER_THRESHOLD:
                 message = f"🔔 Alert! CNY Exchange Rate:\n💹Buy: {buy_rate}₽, which is below {LOWER_THRESHOLD}₽!"
                 await notify_users(
-                    message, context
-                )  # отправляем сообщение всем пользователям
+                    message, buy_rate, context
+                )  # Отправляем сообщение всем пользователям при изменении
 
         else:
             logger.error("Buy rate not found in exchange rate message.")
