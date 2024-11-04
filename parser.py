@@ -31,7 +31,7 @@ def get_cny_exchange_rate() -> str:
                                     rate_date = rate.get(
                                         "rateDate"
                                     )  # Дата актуальности курса
-                                    return f"CNY Exchange Rate - Buy: {buy_rate} RUB, Sell: {sell_rate} RUB\nDate: {rate_date}"
+                                    return f"🈸CNY Exchange Rate:\n💹Buy: {buy_rate}₽, Sell: {sell_rate}₽\n🕐Date: {rate_date}"
 
         return "CNY rate not found"
     except requests.RequestException as e:
