@@ -16,9 +16,9 @@ def get_cny_exchange_rate() -> str:
 
         data = response.json()
 
-        # Сохраняем JSON для анализа (опционально)
-        with open("exchange_rate_data.json", "w", encoding="utf-8") as file:
-            json.dump(data, file, ensure_ascii=False, indent=4)
+        # # Сохраняем JSON для анализа (опционально)
+        # with open("exchange_rate_data.json", "w", encoding="utf-8") as file:
+        #     json.dump(data, file, ensure_ascii=False, indent=4)
 
         # Проверяем, является ли data списком
         if isinstance(data, list):
@@ -30,9 +30,12 @@ def get_cny_exchange_rate() -> str:
                         for rate_item in content:
                             for rate in rate_item.get("items", []):
                                 if rate.get("ticker") == "CNY":
-                                    buy_rate = rate.get("buy")  # Курс покупки
-                                    sell_rate = rate.get("sell")  # Курс продажи
-                                    return f"CNY Exchange Rate - Buy: {buy_rate}, Sell: {sell_rate}"
+                                    sell_rate = rate.get("buy")  # Курс покупки
+                                    buy_rate = rate.get("sell")  # Курс продажи
+                                    rate_date = rate.get(
+                                        "rateDate"
+                                    )  # Дата актуальности курса
+                                    return f"CNY Exchange Rate - Buy: {buy_rate} RUB, Sell: {sell_rate} RUB\nDate: {rate_date}"
         # else:
         #     # Если data - это словарь, обрабатываем его как раньше
         #     content = data.get("content")
@@ -50,7 +53,7 @@ def get_cny_exchange_rate() -> str:
         return "Error fetching exchange rate"
 
 
-# Тестовая функция main для запуска парсера напрямую
-if __name__ == "__main__":
-    rate_info = get_cny_exchange_rate()
-    print(rate_info)
+# # Тестовая функция main для запуска парсера напрямую
+# if __name__ == "__main__":
+#     rate_info = get_cny_exchange_rate()
+#     print(rate_info)
