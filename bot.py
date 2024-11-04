@@ -71,7 +71,7 @@ def main() -> None:
     application.add_handler(CommandHandler("rate", rate))
 
     scheduler.add_job(
-        check_rate, "interval", minute=60, args=[application]
+        check_rate, "interval", minutes=60, args=[application]
     )  # Проверка каждые 60 минут
     scheduler.start()
 
