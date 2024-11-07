@@ -16,7 +16,7 @@ from parser import get_cny_exchange_rate  # Импортируем ваш пар
 
 
 # Получаем токен Telegram бота из переменной окружения
-TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 
 # Настройка логирования
@@ -107,7 +107,7 @@ async def check_rate(context: ContextTypes.DEFAULT_TYPE) -> None:
 # Основная функция для запуска бота
 def main() -> None:
     # Создаем приложение
-    application = ApplicationBuilder().token(TOKEN).build()
+    application = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
     scheduler = AsyncIOScheduler()
 
     # Регистрация обработчиков команд
