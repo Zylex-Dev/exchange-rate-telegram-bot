@@ -1,5 +1,6 @@
 from sched import scheduler
 import re
+import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
@@ -12,6 +13,11 @@ from mongoDB_database import (
     update_user_alert_rate,
 )
 from parser import get_cny_exchange_rate  # Импортируем ваш парсер
+
+
+# Получаем токен Telegram бота из переменной окружения
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+
 
 # Настройка логирования
 logging.basicConfig(
@@ -100,8 +106,6 @@ async def check_rate(context: ContextTypes.DEFAULT_TYPE) -> None:
 
 # Основная функция для запуска бота
 def main() -> None:
-    TOKEN = "7566668017:AAHme__gqzBTOgdMMC1HKpAIH2aQKJplyxk"
-
     # Создаем приложение
     application = ApplicationBuilder().token(TOKEN).build()
     scheduler = AsyncIOScheduler()

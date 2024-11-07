@@ -1,7 +1,20 @@
+import os
 from pymongo import MongoClient
+from pymongo.server_api import ServerApi
 
-# подключение к локальной базе данных
-client = MongoClient("mongodb://localhost:27017/")
+MONGO_DB_URI = os.getenv("MONGO_DB_URI")
+# Подключение к облачной базе данных MongoDB Atlas
+client = MongoClient(MONGO_DB_URI, server_api=ServerApi("1"))
+
+
+# Send a ping to confirm a successful connection
+try:
+    client.admin.command("ping")
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
+
+
 db = client["telegram_bot_db"]  # название базы данных
 users_collection = db["users"]  # коллекция users для хранения chat_id
 
