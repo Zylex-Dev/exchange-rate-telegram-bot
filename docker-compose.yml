@@ -1,6 +1,5 @@
 version: "3.8"
 services:
-
   bot:
     build:
       context: .
@@ -24,15 +23,20 @@ services:
       - app-network
 
   db:
-    image: mongodb/mongodb-community-server
+    image: mongodb/mongodb-community-server:latest
     restart: always
     ports:
       - "27017:27017"
+    volumes:
+      - mongodb_config:/data/configdb
+      - mongodb-data:/data/db
     networks:
       - app-network
-
-
 
 networks:
   app-network:
     driver: bridge
+
+volumes:
+  mongodb-data:
+  mongodb_config:
