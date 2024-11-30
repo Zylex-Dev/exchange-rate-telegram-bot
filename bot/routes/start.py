@@ -51,7 +51,7 @@ async def show_gz_rate(callback_query: CallbackQuery):
     async with async_session() as session:
         values: Optional[Tuple] = await get_gz_exchange_rate()
         if values is not None:
-            buy_rate, sell_rate, rate_date = values
+            sell_rate, buy_rate, rate_date = values
             await update_user_alert_rate(session, user.id, buy_rate)
             await callback_query.message.edit_text(
                 f"🈸CNY Exchange Rate:\n💹Buy: {buy_rate}₽, Sell: {sell_rate}₽\n🕐Date: {rate_date}",
