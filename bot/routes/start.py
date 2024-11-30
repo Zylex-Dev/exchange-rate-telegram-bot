@@ -50,53 +50,52 @@ async def index(message: Message):
 @start_router.callback_query(MyCallback.filter(F.action == "show_gz_rate"))
 async def show_gz_rate(callback_query: CallbackQuery):
     user = callback_query.from_user
-    async with async_session() as session:
-        values: Optional[Tuple] = await get_gz_exchange_rate()
-        if values is not None:
-            sell_rate, buy_rate, rate_date = values
-            await update_user_alert_rate(session, user.id, buy_rate)
-            await callback_query.message.edit_text(
-                f"🈸CNY Exchange Rate:\n💹Buy: {buy_rate}₽, Sell: {sell_rate}₽\n🕐Date: {rate_date}",
-                reply_markup=get_back_to_main_menu_keyboard(),
-            )
-        else:
-            await callback_query.message.edit_text(
-                f"Currently, the information about the exchange rate is not available...",
-                reply_markup=get_back_to_main_menu_keyboard(),
-            )
+    values: Optional[Tuple] = await get_gz_exchange_rate()
+    if values is not None:
+        sell_rate, buy_rate, rate_date = values
+        rate_date = rate_date[:10]  # YYYY-MM-DD
+        logger.info(
+            f"User {user.id} requested Gazprombank CNY rates: buy_rate - {buy_rate}, sell rate - {sell_rate}, date - {rate_date}"
+        )
+        await callback_query.message.answer(
+            f"🈸 CNY Exchange Rate:\n💹 Buy: {buy_rate}₽, Sell: {sell_rate}₽\n🕐 Date: {rate_date}"
+        )
+    else:
+        await callback_query.message.edit_text(
+            f"Currently, the information about the exchange rate is not available...",
+            reply_markup=get_back_to_main_menu_keyboard(),
+        )
+
 
 @start_router.callback_query(MyCallback.filter(F.action == "show_google_rate"))
 async def show_google_rate(callback_query: CallbackQuery):
     user = callback_query.from_user
-    async with async_session() as session:
-        # Fetch the exchange rates and date
-        rates = await get_exchange_rates()
+    rates = await get_exchange_rates()
 
-        if rates is not None:
-            usd_to_rub, cny_to_rub, rate_date = rates
-            # Check if all rates and date are valid
-            if usd_to_rub is not None and cny_to_rub is not None and rate_date is not None:
-                # Log the fetched values
-                logger.info(f"User {user.id} requested Google rates: USD/RUB = {usd_to_rub}, CNY/RUB = {cny_to_rub}, Date = {rate_date}")
-                # Send the response message to the user
-                await callback_query.message.edit_text(
-                    f"🌐Google Exchange Rates:\n💲USD: {usd_to_rub:.2f}₽\n🈸CNY: {cny_to_rub:.2f}₽\n🕐Date: {rate_date}",
-                    reply_markup=get_back_to_main_menu_keyboard(),
-                )
-            else:
-                # Log and send an error message if any data is missing
-                logger.error(f"Exchange rates missing for user {user.id}. One or more fields are None.")
-                await callback_query.message.edit_text(
-                    "Currently, the information about the exchange rates is not available...",
-                    reply_markup=get_back_to_main_menu_keyboard(),
-                )
+    if rates is not None:
+        usd_to_rub, cny_to_rub, rate_date = rates
+        if usd_to_rub is not None and cny_to_rub is not None and rate_date is not None:
+            logger.info(
+                f"User {user.id} requested Google rates: USD/RUB = {usd_to_rub}, CNY/RUB = {cny_to_rub}, Date = {rate_date}"
+            )
+            await callback_query.message.answer(
+                f"🌐 Google Exchange Rates:\n💰 USD: {usd_to_rub:.2f}₽\n🈸 CNY: {cny_to_rub:.2f}₽\n🕐 Date: {rate_date}",
+            )
         else:
-            # Log and send a message if fetching rates failed
-            logger.error(f"Failed to fetch exchange rates for user {user.id}.")
+            logger.error(
+                f"Exchange rates missing for user {user.id}. One or more fields are None."
+            )
             await callback_query.message.edit_text(
                 "Currently, the information about the exchange rates is not available...",
                 reply_markup=get_back_to_main_menu_keyboard(),
             )
+    else:
+        logger.error(f"Failed to fetch exchange rates for user {user.id}.")
+        await callback_query.message.edit_text(
+            "Currently, the information about the exchange rates is not available...",
+            reply_markup=get_back_to_main_menu_keyboard(),
+        )
+
 
 @start_router.callback_query(MyCallback.filter(F.action == "show_cbr_rate"))
 async def show_cbr_rate(callback_query: CallbackQuery):
