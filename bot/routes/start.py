@@ -11,13 +11,15 @@ from utils.db.user import (
     get_user_by_id,
     update_user_alert_rate,
 )
+from utils.log import logger
 from utils.tl_utils import (
     get_main_menu_keyboard,
     get_back_to_main_menu_keyboard,
     MyCallback,
 )
-from utils.gz_utils import get_gz_exchange_rate
+from utils.parsers.gazprom_parser import get_gz_exchange_rate
 from schemas.user import UserCreateSchema, UserUpdateSchema
+from utils.parsers.google_parser import get_exchange_rates
 
 
 log = getLogger("bot")
@@ -63,14 +65,38 @@ async def show_gz_rate(callback_query: CallbackQuery):
                 reply_markup=get_back_to_main_menu_keyboard(),
             )
 
+@start_router.callback_query(MyCallback.filter(F.action == "show_google_rate"))
+async def show_google_rate(callback_query: CallbackQuery):
+    user = callback_query.from_user
+    async with async_session() as session:
+        # Fetch the exchange rates and date
+        rates = await get_exchange_rates()
 
-@start_router.callback_query(MyCallback.filter(F.action == "show_forex_rate"))
-async def show_forex_rate(callback_query: CallbackQuery):
-    await callback_query.message.edit_text(
-        "Coming soon...",
-        reply_markup=get_back_to_main_menu_keyboard(),
-    )
-
+        if rates is not None:
+            usd_to_rub, cny_to_rub, rate_date = rates
+            # Check if all rates and date are valid
+            if usd_to_rub is not None and cny_to_rub is not None and rate_date is not None:
+                # Log the fetched values
+                logger.info(f"User {user.id} requested Google rates: USD/RUB = {usd_to_rub}, CNY/RUB = {cny_to_rub}, Date = {rate_date}")
+                # Send the response message to the user
+                await callback_query.message.edit_text(
+                    f"🌐Google Exchange Rates:\n💲USD: {usd_to_rub:.2f}₽\n🈸CNY: {cny_to_rub:.2f}₽\n🕐Date: {rate_date}",
+                    reply_markup=get_back_to_main_menu_keyboard(),
+                )
+            else:
+                # Log and send an error message if any data is missing
+                logger.error(f"Exchange rates missing for user {user.id}. One or more fields are None.")
+                await callback_query.message.edit_text(
+                    "Currently, the information about the exchange rates is not available...",
+                    reply_markup=get_back_to_main_menu_keyboard(),
+                )
+        else:
+            # Log and send a message if fetching rates failed
+            logger.error(f"Failed to fetch exchange rates for user {user.id}.")
+            await callback_query.message.edit_text(
+                "Currently, the information about the exchange rates is not available...",
+                reply_markup=get_back_to_main_menu_keyboard(),
+            )
 
 @start_router.callback_query(MyCallback.filter(F.action == "show_cbr_rate"))
 async def show_cbr_rate(callback_query: CallbackQuery):
