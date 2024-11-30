@@ -40,7 +40,7 @@ async def index(message: Message):
         await create_or_update_user(session, schema)
 
     await message.answer(
-        "Приветствую! Это бот по просмотру курса обмена валют, выберете желаемую опцию:",
+        "Welcome! This is a bot for checking CNY exchange rate, choose desirable option:",
         reply_markup=get_main_menu_keyboard(),
     )
 
@@ -59,7 +59,7 @@ async def show_gz_rate(callback_query: CallbackQuery):
             )
         else:
             await callback_query.message.edit_text(
-                f"В настоящее время нельзя получить данные по курсу...",
+                f"Currently, the information about the exchange rate is not available...",
                 reply_markup=get_back_to_main_menu_keyboard(),
             )
 
@@ -67,7 +67,7 @@ async def show_gz_rate(callback_query: CallbackQuery):
 @start_router.callback_query(MyCallback.filter(F.action == "show_forex_rate"))
 async def show_forex_rate(callback_query: CallbackQuery):
     await callback_query.message.edit_text(
-        "Скоро появится...",
+        "Coming soon...",
         reply_markup=get_back_to_main_menu_keyboard(),
     )
 
@@ -75,7 +75,7 @@ async def show_forex_rate(callback_query: CallbackQuery):
 @start_router.callback_query(MyCallback.filter(F.action == "show_cbr_rate"))
 async def show_cbr_rate(callback_query: CallbackQuery):
     await callback_query.message.edit_text(
-        "Скоро появится...",
+        "Coming soon...",
         reply_markup=get_back_to_main_menu_keyboard(),
     )
 
@@ -83,7 +83,7 @@ async def show_cbr_rate(callback_query: CallbackQuery):
 @start_router.callback_query(MyCallback.filter(F.action == "back_to_main_menu"))
 async def back_to_main_menu(callback_query: CallbackQuery):
     await callback_query.message.edit_text(
-        "Приветствую! Это бот по просмотру курса обмена валют, выберете желаемую опцию:",
+        "Welcome! This is a bot for checking CNY exchange rate, choose desirable option:",
         reply_markup=get_main_menu_keyboard(),
     )
 
@@ -97,7 +97,7 @@ async def toggle_notify(callback_query: CallbackQuery):
 
         if user_data is None:
             await callback_query.answer(
-                "Ошибка: пользователь не найден в базе данных.", show_alert=True
+                "Error: user is not found in the database.", show_alert=True
             )
             return
 
@@ -112,6 +112,6 @@ async def toggle_notify(callback_query: CallbackQuery):
             )
         )
         await callback_query.message.edit_text(
-            f"Уведомления {'включены' if new_notify_value else 'выключены'}.",
+            f"Notifications {'toggled on' if new_notify_value else 'toggled off'}.",
             reply_markup=get_back_to_main_menu_keyboard(),
         )

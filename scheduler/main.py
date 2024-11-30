@@ -25,8 +25,8 @@ async def send_message_handler():
                     try:
                         await bot.send_message(
                             chat_id=user.id,
-                            text="ПОКУПАТЬ ЮАНЬ, ОН МЕНЬШЕ {} РУБЛЕЙ!!!".format(
-                                settings.LOWER_THRESHOLD
+                            text="🔔 Alert! CNY Exchange Rate:\n💹Buy: {}₽, which is below {}₽".format(
+                                buy_rate, settings.LOWER_THRESHOLD
                             ),
                         )
                         logger.info(
