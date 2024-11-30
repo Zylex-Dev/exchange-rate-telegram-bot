@@ -11,7 +11,7 @@ log = getLogger("mitm")
 
 
 def get_bot() -> Bot:
-    return Bot(token=settings.BOT_TOKEN)
+    return Bot(token=settings.TELEGRAM_BOT_TOKEN)
 
 
 async def main():

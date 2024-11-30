@@ -6,14 +6,12 @@ from config import settings
 
 
 class MongoSession:
-    def __init__(self, host: str, port: int):
-        self.client = motor.motor_asyncio.AsyncIOMotorClient(host, port)
+    def __init__(self, uri: str):
+        self.client = motor.motor_asyncio.AsyncIOMotorClient(uri)
         self.db = self.client[settings.MONGO_DB_NAME]
 
     async def __aenter__(self):
-        logger.info(
-            f"Connecting to MongoDB at {settings.MONGO_HOST}:{settings.MONGO_PORT}"
-        )
+        logger.info(f"Connecting to MongoDB using URI: {settings.MONGO_DB_URI}")
         try:
             await self.client.admin.command("ping")
             logger.info("Successfully connected to MongoDB")
@@ -31,7 +29,7 @@ class MongoSession:
 
 @asynccontextmanager
 async def get_session():
-    async with MongoSession(settings.MONGO_HOST, settings.MONGO_PORT) as session:
+    async with MongoSession(settings.MONGO_DB_URI) as session:
         yield session.db
 
 

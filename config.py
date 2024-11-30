@@ -6,11 +6,12 @@ class Settings(BaseSettings):
 
     MONGO_HOST: str = "db"
     MONGO_PORT: int = 27017
-    MONGO_DB_NAME: str = "main"
+    MONGO_DB_NAME: str = "telegram_bot_db"
+    MONGO_DB_URI: str
 
-    BOT_TOKEN: str
+    TELEGRAM_BOT_TOKEN: str
 
-    LOWER_THRESHOLD: float = 14.0
+    LOWER_THRESHOLD: float = 14.3
     SCHEDULER_DELAY: int = 30
 
 
