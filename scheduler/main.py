@@ -5,7 +5,7 @@ from apscheduler.triggers.interval import IntervalTrigger
 from db.session import async_session
 from bot.main import get_bot
 from utils.db.user import get_all_users_to_notify
-from utils.gz_utils import get_gz_exchange_rate
+from utils.parsers.gazprom_parser import get_gz_exchange_rate
 from utils.time_utils import utcnow
 from utils.log import logger
 from config import settings

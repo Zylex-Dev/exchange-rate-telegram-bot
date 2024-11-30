@@ -15,8 +15,8 @@ def get_main_menu_keyboard() -> InlineKeyboardMarkup:
                     callback_data=MyCallback(action="show_gz_rate").pack(),
                 ),
                 InlineKeyboardButton(
-                    text="Forex",
-                    callback_data=MyCallback(action="show_forex_rate").pack(),
+                    text="Google",
+                    callback_data=MyCallback(action="show_google_rate").pack(),
                 ),
             ],
             [
