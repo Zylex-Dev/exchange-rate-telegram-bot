@@ -11,23 +11,23 @@ def get_main_menu_keyboard() -> InlineKeyboardMarkup:
         inline_keyboard=[
             [
                 InlineKeyboardButton(
-                    text="Курс Газпромбанка",
+                    text="Gazprombank",
                     callback_data=MyCallback(action="show_gz_rate").pack(),
                 ),
                 InlineKeyboardButton(
-                    text="Курс Forex",
+                    text="Forex",
                     callback_data=MyCallback(action="show_forex_rate").pack(),
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="Курс ЦБ РФ",
+                    text="Central Bank of Russia",
                     callback_data=MyCallback(action="show_cbr_rate").pack(),
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="Включить/Выключить уведомления",
+                    text="Toggle notifications",
                     callback_data=MyCallback(action="toggle_notify").pack(),
                 ),
             ],
@@ -40,7 +40,7 @@ def get_back_to_main_menu_keyboard() -> InlineKeyboardMarkup:
         inline_keyboard=[
             [
                 InlineKeyboardButton(
-                    text="🔙 Назад",
+                    text="🔙 Back",
                     callback_data=MyCallback(action="back_to_main_menu").pack(),
                 )
             ]
