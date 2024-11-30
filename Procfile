@@ -1,2 +1,2 @@
-worker: python bot/main.py
-worker: python scheduler/main.py
+bot: python bot/main.py
+scheduler: python scheduler/main.py
