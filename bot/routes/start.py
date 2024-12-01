@@ -2,8 +2,6 @@ from logging import getLogger
 from aiogram import Router, F
 from aiogram.filters import Command
 from aiogram.types import Message, CallbackQuery
-from typing import Tuple, Optional
-from datetime import datetime
 
 from db.session import async_session
 from utils.db.user import (
@@ -126,7 +124,6 @@ async def back_to_main_menu(callback_query: CallbackQuery):
         "Welcome! This is a bot for checking CNY exchange rate, choose desirable option:",
         reply_markup=get_main_menu_keyboard(),
     )
-
 
 @start_router.callback_query(MyCallback.filter(F.action == "toggle_notify"))
 async def toggle_notify(callback_query: CallbackQuery):
