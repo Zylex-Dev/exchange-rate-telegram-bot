@@ -4,14 +4,12 @@ from datetime import datetime
 from typing import Tuple, Optional
 
 from utils.log import logger
-
-today_date = datetime.today().strftime("%Y-%m-%d")
-
-BASE_URL = "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@{date}/v1/currencies"
+from config import settings
 
 
 async def get_exchange_rate(base_currency, target_currency) -> Optional[float]:
-    url = f"{BASE_URL.format(date=today_date)}/{base_currency}.json"
+    today_date = datetime.today().strftime("%Y-%m-%d")
+    url = f"{settings.GOOGLE_FINANCE_URL.format(date=today_date)}/{base_currency}.json"
 
     try:
         async with aiohttp.ClientSession() as session:
@@ -29,14 +27,12 @@ async def get_exchange_rate(base_currency, target_currency) -> Optional[float]:
                     logger.error(
                         f"Couldn't find a rate for {target_currency} in {base_currency} on {today_date}."
                     )
-                    return None
-
     except aiohttp.ClientError as e:
         logger.error(f"Error when requesting data: {e}")
-        return None
 
 
-async def get_exchange_rates() -> Tuple[float, float, float]:
+async def get_exchange_rates() -> Tuple[float, float, str]:
+    today_date = datetime.today().strftime("%Y-%m-%d")
     usd_to_rub = await get_exchange_rate("usd", "rub")
     cny_to_rub = await get_exchange_rate("cny", "rub")
 
@@ -44,7 +40,7 @@ async def get_exchange_rates() -> Tuple[float, float, float]:
 
 
 async def main():
-    usd_to_rub, cny_to_rub = await get_exchange_rates()
+    usd_to_rub, cny_to_rub, today_date = await get_exchange_rates()
     logger.info(f"Received rates: USD/RUB = {usd_to_rub}, CNY/RUB = {cny_to_rub}")
 
 

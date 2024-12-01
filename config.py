@@ -11,6 +11,10 @@ class Settings(BaseSettings):
 
     TELEGRAM_BOT_TOKEN: str
 
+    GOOGLE_FINANCE_URL: str = (
+        "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@{date}/v1/currencies"
+    )
+
     LOWER_THRESHOLD: float = 14.3
     SCHEDULER_DELAY: int = 30
 

@@ -6,31 +6,48 @@ from db.session import async_session
 from bot.main import get_bot
 from utils.db.user import get_all_users_to_notify
 from utils.parsers.gazprom_parser import get_gz_exchange_rate
+from utils.parsers.google_parser import get_exchange_rates as get_google_exchange_rates
 from utils.time_utils import utcnow
 from utils.log import logger
 from config import settings
 
 
 async def send_message_handler():
-    result = await get_gz_exchange_rate()
-    if result:
-        buy_rate, date = float(result[1]), result[2]
-        logger.info("Fetched buy rate {} - {}".format(date, buy_rate))
+    gz_rate = await get_gz_exchange_rate()
+    google_rate = await get_google_exchange_rates()
+    msg = None
+
+    if gz_rate:
+        buy_rate, date = float(gz_rate[1]), gz_rate[2]
+        logger.info("Fetched Gazprombank buy rate {} - {}".format(date, buy_rate))
         if buy_rate <= settings.LOWER_THRESHOLD:
-            async with async_session() as session:
-                users = await get_all_users_to_notify(session)
+            msg = "🔔 Alert! CNY **Gazprombank** Rate:\n💹Buy: {}₽, which is below {}₽".format(
+                buy_rate, settings.LOWER_THRESHOLD
+            )
+
+    if google_rate:
+        buy_rate, date = float(google_rate[1]), google_rate[2]
+        if buy_rate <= settings.LOWER_THRESHOLD:
+            new_msg = "🔔 Alert! CNY **Google Finance** Exchange Rate:\n💹Buy: {}₽, which is below {}₽".format(
+                buy_rate, settings.LOWER_THRESHOLD
+            )
+            if msg is None:
+                msg = new_msg
+            else:
+                msg += "\n" + new_msg
+
+    if msg is not None:
+        async with async_session() as session:
+            users = await get_all_users_to_notify(session)
             if users is not None:
                 bot = get_bot()
                 for user in users:
                     try:
                         await bot.send_message(
-                            chat_id=user.id,
-                            text="🔔 Alert! CNY Exchange Rate:\n💹Buy: {}₽, which is below {}₽".format(
-                                buy_rate, settings.LOWER_THRESHOLD
-                            ),
+                            chat_id=user.id, text=msg, parse_mode="Markdown"
                         )
                         logger.info(
-                            "Message has been successfully delievered to user with id {}".format(
+                            "Message has been successfully delivered to user with id {}".format(
                                 user.id
                             )
                         )
