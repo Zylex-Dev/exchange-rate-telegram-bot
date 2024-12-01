@@ -31,6 +31,12 @@ def get_main_menu_keyboard() -> InlineKeyboardMarkup:
                     callback_data=MyCallback(action="toggle_notify").pack(),
                 ),
             ],
+            [
+                InlineKeyboardButton(
+                    text="Donate for hosting and a cup of Luckin Coffee",
+                    callback_data=MyCallback(action="donate").pack(),
+                ),
+            ],
         ]
     )
 

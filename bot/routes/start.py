@@ -50,18 +50,21 @@ async def index(message: Message):
 @start_router.callback_query(MyCallback.filter(F.action == "show_gz_rate"))
 async def show_gz_rate(callback_query: CallbackQuery):
     user = callback_query.from_user
+    waiting_msg = await callback_query.message.answer(
+        "⏳ Waiting for server response, this may take some time..."
+    )
     rate = await get_gz_exchange_rate()
     if rate is not None:
         rate_date = rate.date[:10]  # YYYY-MM-DD
         logger.info(
             f"User {user.id} requested Gazprombank CNY rates: buy_rate - {rate.value}, sell rate - {rate.sell_rate}, date - {rate_date}"
         )
-        await callback_query.message.answer(
+        await waiting_msg.edit_text(
             f"🈸 CNY Exchange Rate:\n💹 Buy: {rate.value}₽, Sell: {rate.sell_rate}₽\n🕐 Date: {rate_date}"
         )
     else:
-        await callback_query.message.edit_text(
-            f"Currently, the information about the exchange rate is not available...",
+        await waiting_msg.edit_text(
+            "Currently, the information about the exchange rate is not available...",
             reply_markup=get_back_to_main_menu_keyboard(),
         )
 
@@ -69,6 +72,9 @@ async def show_gz_rate(callback_query: CallbackQuery):
 @start_router.callback_query(MyCallback.filter(F.action == "show_google_rate"))
 async def show_google_rate(callback_query: CallbackQuery):
     user = callback_query.from_user
+    waiting_msg = await callback_query.message.answer(
+        "⏳ Waiting for server response, this may take some time..."
+    )
     usd_to_rub = await get_google_exchange_rate(
         GoogleFinanceCodes.USD, GoogleFinanceCodes.RUB
     )
@@ -81,14 +87,14 @@ async def show_google_rate(callback_query: CallbackQuery):
         logger.info(
             f"User {user.id} requested Google rates: USD/RUB = {usd_to_rub.value}, CNY/RUB = {cny_to_rub.value}, Date = {rate_date}"
         )
-        await callback_query.message.answer(
+        await waiting_msg.edit_text(
             f"🌐 Google Exchange Rates:\n💰 USD: {usd_to_rub.value:.2f}₽\n🈸 CNY: {cny_to_rub.value:.2f}₽\n🕐 Date: {rate_date}",
         )
     else:
         logger.error(
             f"Exchange rates missing for user {user.id}. One or more fields are None."
         )
-        await callback_query.message.edit_text(
+        await waiting_msg.edit_text(
             "Currently, the information about the exchange rates is not available...",
             reply_markup=get_back_to_main_menu_keyboard(),
         )
@@ -97,22 +103,25 @@ async def show_google_rate(callback_query: CallbackQuery):
 @start_router.callback_query(MyCallback.filter(F.action == "show_cbr_rate"))
 async def show_cbr_rate(callback_query: CallbackQuery):
     user = callback_query.from_user
+    waiting_msg = await callback_query.message.answer(
+        "⏳ Waiting for server response, this may take some time..."
+    )
     usd_to_rub = await get_cbrf_exchange_rate(CBRFCodes.USD)
     cny_to_rub = await get_cbrf_exchange_rate(CBRFCodes.CNY)
-    rate_date = usd_to_rub.date
+    rate_date = usd_to_rub.date.replace(".", "-")
 
     if usd_to_rub is not None and cny_to_rub is not None:
         logger.info(
             f"User {user.id} requested CBRF rates: USD/RUB = {usd_to_rub.value}, CNY/RUB = {cny_to_rub.value}, Date = {rate_date}"
         )
-        await callback_query.message.answer(
+        await waiting_msg.edit_text(
             f"🌐 CBRF Rates:\n💰 USD: {usd_to_rub.value:.2f}₽\n🈸 CNY: {cny_to_rub.value:.2f}₽\n🕐 Date: {rate_date}",
         )
     else:
         logger.error(
             f"Exchange rates missing for user {user.id}. One or more fields are None."
         )
-        await callback_query.message.edit_text(
+        await waiting_msg.edit_text(
             "Currently, the information about the exchange rates is not available...",
             reply_markup=get_back_to_main_menu_keyboard(),
         )
@@ -124,6 +133,17 @@ async def back_to_main_menu(callback_query: CallbackQuery):
         "Welcome! This is a bot for checking CNY exchange rate, choose desirable option:",
         reply_markup=get_main_menu_keyboard(),
     )
+
+
+@start_router.callback_query(MyCallback.filter(F.action == "donate"))
+async def handle_donate(callback_query: CallbackQuery):
+    await callback_query.message.answer(
+        "Coming soon... Stay tuned for donation options!",
+        reply_markup=get_back_to_main_menu_keyboard(),
+    )
+    user = callback_query.from_user
+    logger.info(f"User {user.id} requested donation information.")
+
 
 @start_router.callback_query(MyCallback.filter(F.action == "toggle_notify"))
 async def toggle_notify(callback_query: CallbackQuery):
