@@ -1,7 +1,13 @@
+import os
 from logging import getLogger
 from aiogram import Router, F
 from aiogram.filters import Command
-from aiogram.types import Message, CallbackQuery
+from aiogram.types import (
+    Message,
+    CallbackQuery,
+    InputMediaPhoto,
+    FSInputFile,
+)
 from datetime import datetime
 
 from db.session import async_session
@@ -27,6 +33,8 @@ log = getLogger("bot")
 
 start_router = Router()
 
+welcome_message = "Welcome! 🎉\nThis bot helps you check the CNY and USD exchange rate effortlessly.\nSimply choose an option below to get started:"
+
 
 @start_router.message(Command("start"))
 async def index(message: Message):
@@ -43,7 +51,7 @@ async def index(message: Message):
         await create_or_update_user(session, schema)
 
     await message.answer(
-        "Welcome! This is a bot for checking CNY exchange rate, choose desirable option:",
+        welcome_message,
         reply_markup=get_main_menu_keyboard(),
     )
 
@@ -132,18 +140,46 @@ async def show_cbr_rate(callback_query: CallbackQuery):
 
 @start_router.callback_query(MyCallback.filter(F.action == "back_to_main_menu"))
 async def back_to_main_menu(callback_query: CallbackQuery):
-    await callback_query.message.edit_text(
-        "Welcome! This is a bot for checking CNY exchange rate, choose desirable option:",
-        reply_markup=get_main_menu_keyboard(),
-    )
+    try:
+        if callback_query.message.text:
+            await callback_query.message.edit_text(
+                welcome_message,
+                reply_markup=get_main_menu_keyboard(),
+            )
+        elif callback_query.message.caption or callback_query.message.photo:
+            await callback_query.message.delete()
+            await callback_query.message.answer(
+                welcome_message,
+                reply_markup=get_main_menu_keyboard(),
+            )
+        else:
+            await callback_query.message.answer(
+                welcome_message,
+                reply_markup=get_main_menu_keyboard(),
+            )
+    except Exception as e:
+        logger.error(f"Error in back_to_main_menu: {e}")
+        await callback_query.answer("An error occurred while processing your request.")
 
 
 @start_router.callback_query(MyCallback.filter(F.action == "donate"))
 async def handle_donate(callback_query: CallbackQuery):
-    await callback_query.message.edit_text(
-        "Coming soon... Stay tuned for donation options!",
+    qr_code_path = os.path.join(os.getcwd(), "data/other/qr-code.jpg")
+    qr_code_file = FSInputFile(qr_code_path)
+
+    await callback_query.message.edit_media(
+        media=InputMediaPhoto(
+            media=qr_code_file,
+            caption=(
+                "To make a donation:\n"
+                "- *For RUB*: Use the number `+79991728881`.\n"
+                "- *For CNY*: Scan the QR code below."
+            ),
+            parse_mode="Markdown",
+        ),
         reply_markup=get_back_to_main_menu_keyboard(),
     )
+
     user = callback_query.from_user
     logger.info(f"User {user.id} requested donation information.")
 
