@@ -2,6 +2,7 @@ from logging import getLogger
 from aiogram import Router, F
 from aiogram.filters import Command
 from aiogram.types import Message, CallbackQuery
+from datetime import datetime
 
 from db.session import async_session
 from utils.db.user import (
@@ -60,7 +61,7 @@ async def show_gz_rate(callback_query: CallbackQuery):
             f"User {user.id} requested Gazprombank CNY rates: buy_rate - {rate.value}, sell rate - {rate.sell_rate}, date - {rate_date}"
         )
         await waiting_msg.edit_text(
-            f"🈸 CNY Exchange Rate:\n💹 Buy: {rate.value}₽, Sell: {rate.sell_rate}₽\n🕐 Date: {rate_date}"
+            f"🌐 Gazprombank Exchange Rates:\n🈸 CNY Exchange Rate:\n💹 Buy: {rate.value}₽, Sell: {rate.sell_rate}₽\n🕐 Date: {rate_date}"
         )
     else:
         await waiting_msg.edit_text(
@@ -108,14 +109,16 @@ async def show_cbr_rate(callback_query: CallbackQuery):
     )
     usd_to_rub = await get_cbrf_exchange_rate(CBRFCodes.USD)
     cny_to_rub = await get_cbrf_exchange_rate(CBRFCodes.CNY)
-    rate_date = usd_to_rub.date.replace(".", "-")
 
     if usd_to_rub is not None and cny_to_rub is not None:
+        rate_date = usd_to_rub.date
+        rate_date_obj = datetime.strptime(rate_date, "%d.%m.%Y")
+        rate_date_formatted = rate_date_obj.strftime("%Y-%m-%d")
         logger.info(
-            f"User {user.id} requested CBRF rates: USD/RUB = {usd_to_rub.value}, CNY/RUB = {cny_to_rub.value}, Date = {rate_date}"
+            f"User {user.id} requested CBRF rates: USD/RUB = {usd_to_rub.value}, CNY/RUB = {cny_to_rub.value}, Date = {rate_date_formatted}"
         )
         await waiting_msg.edit_text(
-            f"🌐 CBRF Rates:\n💰 USD: {usd_to_rub.value:.2f}₽\n🈸 CNY: {cny_to_rub.value:.2f}₽\n🕐 Date: {rate_date}",
+            f"🌐 CBRF Rates:\n💰 USD: {usd_to_rub.value:.2f}₽\n🈸 CNY: {cny_to_rub.value:.2f}₽\n🕐 Date: {rate_date_formatted}",
         )
     else:
         logger.error(
