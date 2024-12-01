@@ -137,7 +137,7 @@ async def back_to_main_menu(callback_query: CallbackQuery):
 
 @start_router.callback_query(MyCallback.filter(F.action == "donate"))
 async def handle_donate(callback_query: CallbackQuery):
-    await callback_query.message.answer(
+    await callback_query.message.edit_text(
         "Coming soon... Stay tuned for donation options!",
         reply_markup=get_back_to_main_menu_keyboard(),
     )
