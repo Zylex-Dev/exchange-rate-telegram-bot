@@ -1,0 +1,42 @@
+version: "3.8"
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python3 bot/main.py
+    restart: always
+    env_file:
+      - .env
+    networks:
+      - app-network
+
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python3 scheduler/main.py
+    restart: always
+    env_file:
+      - .env
+    networks:
+      - app-network
+
+  db:
+    image: mongodb/mongodb-community-server:latest
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_config:/data/configdb
+      - mongodb-data:/data/db
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mongodb-data:
+  mongodb_config:

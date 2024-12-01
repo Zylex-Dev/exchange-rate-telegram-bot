@@ -1,7 +1,7 @@
 # exchange-rate-telegram-bot
 The telegram bot shows the current CNY exchange rate from Gazprombank site
 
-**[Telegram Bot Link](https://t.me/rmb_exchangee_rate_bot)**
+**[Telegram Bot Link](https://t.me/CNY_exchangee_rate_bot)**
 
 ## **Commands**
 1. **/start** - Starts a bot & starts an automatic mailing
