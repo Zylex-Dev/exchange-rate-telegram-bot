@@ -5,8 +5,10 @@ from apscheduler.triggers.interval import IntervalTrigger
 from db.session import async_session
 from bot.main import get_bot
 from utils.db.user import get_all_users_to_notify
-from utils.parsers.gazprom_parser import get_gz_exchange_rate
-from utils.parsers.google_parser import get_exchange_rates as get_google_exchange_rates
+from utils.parsers.gazprom import get_exchange_rate as get_gz_exchange_rate
+from utils.parsers.google_finance import get_exchange_rate as get_google_exchange_rate
+from utils.parsers.cbrf import get_exchange_rate as get_cbrf_exchange_rates
+from utils.parsers import CBRFCodes, GoogleFinanceCodes
 from utils.time_utils import utcnow
 from utils.log import logger
 from config import settings
@@ -14,19 +16,29 @@ from config import settings
 
 async def send_message_handler():
     gz_rate = await get_gz_exchange_rate()
-    google_rate = await get_google_exchange_rates()
+    google_rate_cny_to_rub = await get_google_exchange_rate(
+        GoogleFinanceCodes.CNY, GoogleFinanceCodes.RUB
+    )
+    cbrf_rate_cny_to_rub = await get_cbrf_exchange_rates(CBRFCodes.CNY)
     msg = None
 
     if gz_rate:
-        buy_rate, date = float(gz_rate[1]), gz_rate[2]
-        logger.info("Fetched Gazprombank buy rate {} - {}".format(date, buy_rate))
+        buy_rate = gz_rate.value
+        logger.info(
+            "Fetched Gazprombank buy rate {} - {}".format(gz_rate.date, buy_rate)
+        )
         if buy_rate <= settings.LOWER_THRESHOLD:
             msg = "🔔 Alert! CNY **Gazprombank** Rate:\n💹Buy: {}₽, which is below {}₽".format(
                 buy_rate, settings.LOWER_THRESHOLD
             )
 
-    if google_rate:
-        buy_rate, date = float(google_rate[1]), google_rate[2]
+    if google_rate_cny_to_rub:
+        buy_rate = google_rate_cny_to_rub.value
+        logger.info(
+            "Fetched Google Finance buy rate {} - {}".format(
+                google_rate_cny_to_rub.date, buy_rate
+            )
+        )
         if buy_rate <= settings.LOWER_THRESHOLD:
             new_msg = "🔔 Alert! CNY **Google Finance** Exchange Rate:\n💹Buy: {}₽, which is below {}₽".format(
                 buy_rate, settings.LOWER_THRESHOLD
@@ -34,7 +46,21 @@ async def send_message_handler():
             if msg is None:
                 msg = new_msg
             else:
-                msg += "\n" + new_msg
+                msg += "\n\n" + new_msg
+
+    if cbrf_rate_cny_to_rub:
+        buy_rate = cbrf_rate_cny_to_rub.value
+        logger.info(
+            "Fetched CBRF buy rate {} - {}".format(cbrf_rate_cny_to_rub.date, buy_rate)
+        )
+        if buy_rate <= settings.LOWER_THRESHOLD:
+            new_msg = "🔔 Alert! CNY **Central Bank of Russian Federation** Exchange Rate:\n💹Buy: {}₽, which is below {}₽".format(
+                buy_rate, settings.LOWER_THRESHOLD
+            )
+            if msg is None:
+                msg = new_msg
+            else:
+                msg += "\n\n" + new_msg
 
     if msg is not None:
         async with async_session() as session:

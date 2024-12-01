@@ -14,9 +14,13 @@ class Settings(BaseSettings):
     GOOGLE_FINANCE_URL: str = (
         "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@{date}/v1/currencies"
     )
+    CBRF_URL: str = "https://cbr.ru/scripts/XML_daily_eng.asp"
+    GAZPROMBANK_URL: str = (
+        "https://www.gazprombank.ru/rest/exchange/rate?ab_segment=segment08&cityId=617&version=3&lang=ru"
+    )
 
-    LOWER_THRESHOLD: float = 14.3
-    SCHEDULER_DELAY: int = 30
+    LOWER_THRESHOLD: float = 200
+    SCHEDULER_DELAY: int = 1
 
 
 settings = Settings()
