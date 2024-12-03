@@ -83,23 +83,3 @@ async def update_user(session: AsyncIOMotorDatabase, schema: UserUpdateSchema):
         await users_collection.update_one({"id": schema.id}, {"$set": data})
     else:
         logger.warn("User with the given id {} does not exist".format(schema.id))
-
-
-async def main():
-    from db.session import async_session
-
-    async with async_session() as session:
-        create_schema = UserCreateSchema(
-            id=123,
-            username="comp",
-            first_name="lol",
-        )
-        update_schema = UserUpdateSchema(id=123, username="comp1")
-        print(await get_all_users(session))
-        print(await get_all_users_to_notify(session))  # This should now work correctly
-
-
-if __name__ == "__main__":
-    import asyncio
-
-    asyncio.run(main())
