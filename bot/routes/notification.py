@@ -259,6 +259,8 @@ async def receive_threshold_input(message: Message, state: FSMContext, bot: Bot)
     await bot.delete_message(chat_id=user.id, message_id=last_message_id)
     try:
         threshold_value = float(message.text)
+        if threshold_value < 0:
+            raise ValueError
     except ValueError:
         message = await message.reply("Please send a valid number for the threshold.")
         await state.update_data(last_message_id=message.message_id)
