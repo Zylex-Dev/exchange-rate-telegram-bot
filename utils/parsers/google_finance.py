@@ -1,5 +1,4 @@
 import aiohttp
-import asyncio
 from datetime import datetime
 from typing import Optional
 
@@ -37,12 +36,3 @@ async def get_exchange_rate(
                     )
     except aiohttp.ClientError as e:
         logger.error(f"Error when requesting data: {e}")
-
-
-async def main():
-    usd_to_rub = await get_exchange_rate(GoogleFinanceCodes.USD, GoogleFinanceCodes.RUB)
-    logger.info(f"Received rates: USD/RUB = {usd_to_rub.value}")
-
-
-if __name__ == "__main__":
-    asyncio.run(main())

@@ -23,20 +23,3 @@ async def get_exchange_rate(currency_name: str) -> Optional[ExchangeRateSchema]:
                     value=float(value.replace(",", ".")),
                     date=date,
                 )
-
-
-async def main():
-    from utils.parsers import CBRFCodes
-
-    result = await get_exchange_rate(CBRFCodes.USD)
-
-    if result:
-        print(f"Date: {result.date}, Currency: {result.currency}, Rate: {result.value}")
-    else:
-        print("Currency not found.")
-
-
-if __name__ == "__main__":
-    import asyncio
-
-    asyncio.run(main())
