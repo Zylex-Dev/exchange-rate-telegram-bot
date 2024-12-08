@@ -61,7 +61,7 @@ async def send_message_handler():
                         if getattr(user, notify_field) and buy_rate <= getattr(
                             user, threshold_field
                         ):
-                            message = f"🔔 Alert! CNY **{source_name[rate_name]}** Exchange Rate:\n💹Buy: {buy_rate}₽"
+                            message = f"🔔 Alert! CNY **{source_name[rate_name]}** Exchange Rate:\n💹Buy: {buy_rate:.2}₽"
 
                             tasks.append(
                                 asyncio.create_task(
