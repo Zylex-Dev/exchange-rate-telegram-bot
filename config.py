@@ -19,7 +19,6 @@ class Settings(BaseSettings):
         "https://www.gazprombank.ru/rest/exchange/rate?ab_segment=segment08&cityId=617&version=3&lang=ru"
     )
 
-    LOWER_THRESHOLD: float = 14.3
     SCHEDULER_DELAY: int = 60
 
 

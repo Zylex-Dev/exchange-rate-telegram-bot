@@ -1,5 +1,4 @@
 import aiohttp
-import asyncio
 from datetime import datetime
 from typing import Optional
 

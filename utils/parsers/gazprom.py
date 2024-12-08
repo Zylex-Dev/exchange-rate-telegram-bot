@@ -30,8 +30,8 @@ async def get_exchange_rate():
                                     for rate in rate_item.get("items", []):
                                         if rate.get("ticker") == "CNY":
                                             return ExchangeRateSchema(
-                                                value=rate.get("sell"),
-                                                sell_rate=rate.get("buy"),
+                                                value=rate.get("buy"),
+                                                sell_rate=rate.get("sell"),
                                                 date=rate.get("rateDate"),
                                             )
 
