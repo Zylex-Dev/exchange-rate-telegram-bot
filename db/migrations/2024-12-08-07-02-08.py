@@ -16,9 +16,9 @@ async def upgrade(session: AsyncIOMotorDatabase):
             {},
             {
                 "$set": {
-                    "gz_threshold": 14.0,
-                    "google_threshold": 14.0,
-                    "cbrf_threshold": 14.0,
+                    "gz_threshold": 14.00,
+                    "google_threshold": 14.00,
+                    "cbrf_threshold": 14.00,
                     "gz_notify": True,
                     "google_notify": True,
                     "cbrf_notify": True,
