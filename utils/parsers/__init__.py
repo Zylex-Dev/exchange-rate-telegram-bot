@@ -3,8 +3,13 @@ from enum import Enum
 
 
 class CBRFCodes(str, Enum):
-    CNY = "CNY"
     USD = "USD"
+    CNY = "CNY"
+
+
+class GazprombankCodes(str, Enum):
+    USD = "USD"
+    CNY = "CNY"
 
 
 class GoogleFinanceCodes(str, Enum):

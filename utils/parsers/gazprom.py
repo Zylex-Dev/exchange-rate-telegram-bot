@@ -1,6 +1,7 @@
 import aiohttp
 
 from schemas.gazprom import ExchangeRateSchema
+from utils.parsers import GazprombankCodes
 from utils.log import logger
 from config import settings
 
@@ -12,7 +13,7 @@ headers = {
 # yes, the use of headers is mandatory, since baka gazprom api checks for user-agent device
 
 
-async def get_exchange_rate():
+async def get_exchange_rate(currency_code: GazprombankCodes):
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(
@@ -28,12 +29,18 @@ async def get_exchange_rate():
                             if content:
                                 for rate_item in content:
                                     for rate in rate_item.get("items", []):
-                                        if rate.get("ticker") == "CNY":
+                                        if rate.get("ticker") == currency_code:
                                             return ExchangeRateSchema(
-                                                value=rate.get("buy"),
-                                                sell_rate=rate.get("sell"),
+                                                value=rate.get("sell"),
+                                                sell_rate=rate.get("buy"),
                                                 date=rate.get("rateDate"),
                                             )
 
     except aiohttp.ClientError as e:
         logger.error(f"Error fetching the page: {e}")
+
+
+if __name__ == "__main__":
+    import asyncio
+
+    print(asyncio.run(get_exchange_rate(GazprombankCodes.CNY)))

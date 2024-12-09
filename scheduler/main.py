@@ -7,7 +7,7 @@ from bot.main import get_bot
 from utils.parsers.gazprom import get_exchange_rate as get_gz_exchange_rate
 from utils.parsers.google_finance import get_exchange_rate as get_google_exchange_rate
 from utils.parsers.cbrf import get_exchange_rate as get_cbrf_exchange_rates
-from utils.parsers import CBRFCodes, GoogleFinanceCodes
+from utils.parsers import CBRFCodes, GoogleFinanceCodes, GazprombankCodes
 from utils.db.user import get_all_users_to_notify
 from utils.time_utils import utcnow
 from utils.log import logger
@@ -16,7 +16,7 @@ from config import settings
 
 async def fetch_exchange_rates() -> tuple:
     tasks = [
-        asyncio.create_task(get_gz_exchange_rate()),
+        asyncio.create_task(get_gz_exchange_rate(GazprombankCodes.CNY)),
         asyncio.create_task(
             get_google_exchange_rate(GoogleFinanceCodes.CNY, GoogleFinanceCodes.RUB)
         ),
